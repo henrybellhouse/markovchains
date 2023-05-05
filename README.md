@@ -25,4 +25,4 @@ Once this was successful, we needed a function for transition probabilities. Mat
 
 # Resources
 
-[Stanford STAT217 Lecture Note on Markov Chains](https://web.stanford.edu/class/stat217/New12.pdf)
+[Stanford STAT217 Lecture Note](https://web.stanford.edu/class/stat217/New12.pdf)
