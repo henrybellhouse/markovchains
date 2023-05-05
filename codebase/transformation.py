@@ -1,4 +1,5 @@
-# Markov Chain-specific Pre-Processing
+# Markov Chain-specific Processing for DataFrame
+
 df_paths = df.groupby('cookie')['channel'].aggregate(
     lambda x: x.unique().tolist()).reset_index()
 

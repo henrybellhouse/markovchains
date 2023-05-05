@@ -1,4 +1,4 @@
-# Possible Transitions
+# Possible Channel-to-Channel Transitions
 paths_list = df_paths['path']
 
 def transition(paths_list):
