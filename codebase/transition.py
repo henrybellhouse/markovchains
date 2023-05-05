@@ -16,3 +16,24 @@ def transition(paths_list):
     return transition
 
 transition_list = transition(paths_list)
+
+# Probabilistic Model for Transitions
+
+def p_transition(transition_dict):
+    unique_channel_list = set(x for element in paths_list for x in element)
+    p_transition = defaultdict(dict)
+    for state in unique_channel_list:
+        if state not in ['Conversion', 'Null']:
+            counter = 0
+            index = [i for i, s in enumerate(transition_dict) if state + '>' in s]
+            for col in index:
+                if transition_dict[list(transition_dict)[col]] > 0:
+                    counter += transition_dict[list(transition_dict)[col]]
+            for col in index:
+                if transition_dict[list(transition_dict)[col]] > 0:
+                    state_prob = float((transition_dict[list(transition_dict)[col]])) / float(counter)
+                    p_transition[list(transition_dict)[col]] = state_prob
+
+    return p_transition
+
+p_transition = p_transition(transition_list)
