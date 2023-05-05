@@ -13,3 +13,11 @@ import matplotlib.style as style
 import seaborn as sns
 
 import os
+
+# Data Import and Pre-Processing
+df = pd.read_csv(open(os.path.expanduser("~/documents/data/attribution.csv")))
+df['time'] = pd.to_datetime(df['time'])
+df = df.sort_values(['cookie', 'time'],
+                    ascending=[False, True])
+df['order'] = df.groupby('cookie').cumcount() + 1
+df.head()
