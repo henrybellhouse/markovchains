@@ -1,3 +1,6 @@
+conversion_total = sum(path.count('Conversion') for path in df_paths['path'].tolist())
+conversion_rate = conversion_total / len(paths_list)
+
 def removal_effects(df, conversion_rate):
     removal_effects_dict = {}
     channels = [channel for channel in df.columns if channel not in ['Start',
