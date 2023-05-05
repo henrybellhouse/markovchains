@@ -1,7 +1,7 @@
 # Markov Attribution
 Markov Chains can help to solve the Channel Attribution problem by modelling the customer journey as a sequence of events, where each event corresponds to a customer interaction with a marketing channel. The probability of a customer transitioning from one channel to another can then be estimated based on historical data. By analysing these transition probabilities, it is possible to determine which channels are most effective at driving conversions.
 
-Markov Chains are a type of stochastic model that represent a sequence of events, where the probability of each event depends only on the state of the previous event. Markov Chains can be used to model systems where the future state depends only on the present state, and not on any past states.
+Markov Chains are a type of stochastic model that represent a sequence of events, where the probability of each event depends only on the state of the previous event. Markov Chains can be used to model systems where the future state depends only on the present state, and not on any past states. To motivate this work and reinforce my statistical knowledge, I drew from Stanford University STAT217 class notes, which can be found in the Resource section at the end of this walkthrough.
 
 # Dataset
 
@@ -22,3 +22,7 @@ Specific pre-processing was needed to model the data with Markov Chains. Convert
 One valuable function I wrote for this analysis is a 'map' of all possible transitions from one channel to the next. The output of the function (found in transition.py) is a dictionary containing all possible iterations seen in the data. Being able to count the number of times a given transition occurs is the foundation to calculating the probability of a given transition.
 
 Once this was successful, we needed a function for transition probabilities. Mathematically, this is counting the specific instances of one particular transition as the numerator, with the numerical count of  observed transitions as the denominator.
+
+# Resources
+
+[Stanford STAT217 Lecture Note on Markov Chains](https://web.stanford.edu/class/stat217/New12.pdf)
