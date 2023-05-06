@@ -3,6 +3,13 @@ Markov Chains can help to solve the Channel Attribution problem by modelling the
 
 Markov Chains are a type of stochastic model that represent a sequence of events, where the probability of each event depends only on the state of the previous event. Markov Chains can be used to model systems where the future state depends only on the present state, and not on any past states. To motivate this work and reinforce my statistical knowledge, I drew from Stanford University STAT217 class notes, which can be found in the Resource section at the end of this walkthrough.
 
+# Assumptions
+
+The key assumptions of using Markov Chains for channel attribution include:
+
+Markov Property: The probability of transitioning to the next channel depends only on the current channel and is independent of past states; and
+Myopia: The past history of transitions does not impact future transitions.
+
 # Dataset
 
 This analysis draws from public eCommerce data that is 'clean', with approximately 600,000 touchpoints for 250,000 unique customers (the field 'cookie' is used as a unique identifier). This dataset also has a timestamp column to ascertain the chronological order of touchpoints in a particular customer journey.
