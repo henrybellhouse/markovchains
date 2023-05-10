@@ -19,7 +19,7 @@ Specific pre-processing was needed to model the data with Markov Chains. Convert
 
 # Map of Transitions
 
-One valuable function I wrote for this analysis is a 'map' of all possible transitions from one channel to the next. The output of the function (found in transition.py) is a dictionary containing all possible iterations seen in the data. Being able to count the number of times a given transition occurs is the foundation to calculating the probability of a given transition.
+One valuable function I wrote for this analysis is a 'map' of all possible transitions from one channel to the next. The output of the function is a dictionary containing all possible iterations seen in the data. Being able to count the number of times a given transition occurs is the foundation to calculating the probability of a given transition.
 
 Once this was successful, we needed a function for transition probabilities. Mathematically, this is counting the specific instances of one particular transition as the numerator, with the numerical count of  observed transitions as the denominator.
 
