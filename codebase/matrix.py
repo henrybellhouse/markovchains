@@ -1,5 +1,3 @@
-# Matrix Transformation of Probability Model
-
 def matrix(paths_list, transition_probabilities):
     matrix = pd.DataFrame()
     unique_channel_list = set(x for element in paths_list for x in element)
