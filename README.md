@@ -27,7 +27,7 @@ Once this was successful, we needed a function for transition probabilities. Mat
 
 Removal effects in Markov chains refer to the changes in the probability distribution of the states in the chain that occur when a particular state is removed. The removal effect of a state is the difference between the probability of being in each state with the state present and the probability of being in each state with the state removed. These effects are useful in understanding the importance of particular states in the chain, as well as in making predictions about future states.
 
-Examining the removal effects of all states in the chain will give us insights into which states are most influential in determining the long-term behavior of the chain.
+Examining the removal effects of all states in the chain will give us insights into which states are most influential in determining the long-term behaviour of the chain. In this context, we investigate which states are driving conversions (the long-term behaviour of a given customer journey).
 
 # Conclusion
 
