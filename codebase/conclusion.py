@@ -10,6 +10,4 @@ print(attribution)
 attribution = pd.Series(attribution).sort_values()
 print(attribution)
 
-# Normalise to look at Expected Values
-
 (attribution / sum(attribution)).apply('{:.0%}'.format)
