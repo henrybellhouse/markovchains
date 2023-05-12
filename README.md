@@ -23,6 +23,12 @@ One valuable function I wrote for this analysis is a 'map' of all possible trans
 
 Once this was successful, we needed a function for transition probabilities. Mathematically, this is counting the specific instances of one particular transition as the numerator, with the numerical count of  observed transitions as the denominator.
 
+# Matrix Transformation and Removal Effects
+
+Removal effects in Markov chains refer to the changes in the probability distribution of the states in the chain that occur when a particular state is removed. The removal effect of a state is the difference between the probability of being in each state with the state present and the probability of being in each state with the state removed. These effects are useful in understanding the importance of particular states in the chain, as well as in making predictions about future states.
+
+Examining the removal effects of all states in the chain will give us insights into which states are most influential in determining the long-term behavior of the chain.
+
 # Resources
 
 [Stanford STAT217 Lecture Note](https://web.stanford.edu/class/stat217/New12.pdf)
