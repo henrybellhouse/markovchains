@@ -1,4 +1,3 @@
-# Possible Channel-to-Channel Transitions
 paths_list = df_paths['path']
 
 def transition(paths_list):
@@ -16,8 +15,6 @@ def transition(paths_list):
     return transition
 
 transition_list = transition(paths_list)
-
-# Probabilistic Model for Transitions
 
 def p_transition(transition_dict):
     unique_channel_list = set(x for element in paths_list for x in element)
