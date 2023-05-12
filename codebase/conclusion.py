@@ -6,3 +6,10 @@ def markov_chain_allocations(removal_effects, conversion_total):
 attribution = markov_chain_allocations(removal_effects_dict, conversion_total)
 
 print(attribution)
+
+attribution = pd.Series(attribution).sort_values()
+print(attribution)
+
+# Normalise to look at Expected Values
+
+(attribution / sum(attribution)).apply('{:.0%}'.format)
