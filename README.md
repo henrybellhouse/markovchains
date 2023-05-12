@@ -29,6 +29,10 @@ Removal effects in Markov chains refer to the changes in the probability distrib
 
 Examining the removal effects of all states in the chain will give us insights into which states are most influential in determining the long-term behavior of the chain.
 
+# Conclusion
+
+Having computed the Removal Effects, we are able to conclude the approach and ascertain the number of credits to be assigned to each marketing channel. As we can see, Facebook is assigned the highest number of credits for this dataset. If this data is representative of the entire user base then Facebook would be deemed the most valuable touchpoint for a given journey. Furthermore, normalising these credit indicates that, iff we take a converted customer journey at random, we expect that more than half of the assigned credit to be attributed to Facebook and Paid Search, alone. The expected credit for Facebook is equal to the combined credit that we expect for Online Display and Online Video. Markov Chains have given us complete oversight of the customer touchpoints that are experienced by a given user. Building a data-driven approach is more objective and empirical compared to heuristic models, which often rely on predefined rules or assumptions.
+
 # Resources
 
 [Stanford STAT217 Lecture Note](https://web.stanford.edu/class/stat217/New12.pdf)
