@@ -1,7 +1,7 @@
 # Markov Attribution
 Markov Chains can help to solve the Channel Attribution problem by modelling the customer journey as a sequence of events, where each event corresponds to a customer interaction with a marketing channel. The probability of a customer transitioning from one channel to another can then be estimated based on historical data. By analysing these transition probabilities, it is possible to determine which channels are most effective at driving conversions.
 
-Markov Chains are a type of stochastic model that represent a sequence of events, where the probability of each event depends only on the state of the previous event. Markov Chains can be used to model systems where the future state depends only on the present state, and not on any past states. To motivate this work and reinforce my statistical knowledge, I drew from Stanford University STAT217 class notes, which can be found in the Resource section at the end of this walkthrough.
+Markov Chains are a type of stochastic model that represent a sequence of events, where the probability of each event depends only on the state of the previous event. Markov Chains can be used to model systems where the future state depends only on the present state, and not on any past states.
 
 # Dataset
 
@@ -34,7 +34,3 @@ Examining the removal effects of all states in the chain will give us insights i
 Having computed the Removal Effects, we are able to conclude the approach and ascertain the number of credits to be assigned to each marketing channel. As we can see, Facebook is assigned the highest number of credits for this dataset. If this data is representative of the entire user base then Facebook would be deemed the most valuable touchpoint for a given journey. Furthermore, normalising these credit indicates that, if we take a converted customer journey at random, we expect that more than half of the assigned credit to be attributed to Facebook and Paid Search, alone. The expected credit for Facebook is equal to the combined credit that we expect for Online Display and Online Video.
 
 Building a statistical approach with Markov Chains is more objective and empirical compared to heuristic models, which often rely on predefined rules or assumptions. This should give Marketing and Growth teams insight into which channels are driving conversions most effectively, and can serve as evidence to support changes in their marketing mix.
-
-# Resources
-
-[Stanford STAT217 Lecture Note](https://web.stanford.edu/class/stat217/New12.pdf)
